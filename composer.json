@@ -1,0 +1,53 @@
+{
+    "name": "ross/ali-oss",
+    "type": "library",
+    "description": "",
+    "keywords": [
+        "Laravel-oss",
+        "oss",
+        "alioss",
+        "ali-oss",
+        "ali oss",
+        "阿里oss"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rachelroll",
+            "email": "hai30@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "aliyuncs/oss-sdk-php": "^2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ross\\AliOss\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Ross\\AliOss\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ross\\AliOss\\AliOssServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
